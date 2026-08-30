@@ -18,7 +18,7 @@
     flex-shrink: 0;
     padding: 20px 40px;
     color: white;
-    
+    letter-spacing: 3px;
 }
 
 .top h1 {
@@ -26,8 +26,11 @@
     left: 50%;
     bottom: 10px;
     transform: translate(-50%);
+    
 }
-
+.T{
+    font-size: 35px;
+}
 .time {
     position: absolute;
     right: 40px;
@@ -43,6 +46,8 @@
     flex-direction: row;
     width: 100vw;
     flex: 1;
+    font-weight:900;
+    
 }
 
 .bottom{
@@ -66,4 +71,12 @@
 .utils{
     border: 2px solid green;
     width: 20%;
+}
+
+
+#greet{
+    color: #00FF00;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
