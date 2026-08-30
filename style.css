@@ -40,3 +40,20 @@ input{
     
     font-size: 15px;
 }
+
+
+button{
+    background-color: black;
+    color: #00FF00;
+    border: dashed white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color:#000000 ;
+    color: rgb(43, 161, 41);
+}
