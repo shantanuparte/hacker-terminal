@@ -3,5 +3,27 @@
     box-sizing: border-box;
 }
 
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
 
+.top{
+    height: 100%;
+    width: 20vw;
+    border: 2px solid pink;
+}
+
+.main{
+    height: 100%;
+    width: 60vw;
+    border: 2px solid black;
+}
+
+.bottom{
+    height: 100%;
+    width: 20vw;
+    border: 2px solid yellow;
+}
 
