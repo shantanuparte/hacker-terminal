@@ -24,3 +24,6 @@ const time = document.getElementById("time_p")
 time.innerHTML = `${for_time}`
 
 
+const form = document.getElementById("terminal_form")
+
+
