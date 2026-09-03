@@ -1,3 +1,5 @@
+const { jsx } = require("react/jsx-runtime")
+
 console.log("Working ")
 
 
@@ -41,7 +43,7 @@ function print(text){
 
 function printCommand(command){
     const line = document.createElement("div")
-    line.innerHTML = `<span class="prompt">&git;</span> ${command}`
+    line.innerHTML = `<span class="prompt">&gt;</span> ${command}`
 
     output.appendChild(line)
 
@@ -65,6 +67,7 @@ form.addEventListener("submit", function(event){
 })
 
 function handleCommand(command){
+    
     switch(command.toLowerCase()){
 
         case "help":
@@ -73,6 +76,9 @@ function handleCommand(command){
             print("  clear      -Clear terminal")
             print("  about      -About NightTerminal")
             print("  echo       -Print text");
+            print("  date      -Show current date")
+            print("   time      -Show current time")
+            print("  whoami     -Show User name")
             break
 
         case "clear":
@@ -84,6 +90,17 @@ function handleCommand(command){
             print("A Web-Based terminal interface")
             break
 
+        case "time":
+            print(new Intl.DateTimeFormat('en-US',{hour:'2-digit',minute:'2-digit', hour12:true}).format(new Date()))
+            break
+
+        case "date":
+            print(new Date().toLocaleDateString())
+            break
+
+        case "whoami":
+            print(user_name)
+            break
         default:
             if (command.startsWith("echo")){
 

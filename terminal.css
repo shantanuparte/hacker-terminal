@@ -81,7 +81,7 @@
 }
 
 .option{
-    color: rgb(21, 255, 0);
+    color: #33ff33;
     font-size: 17px;
     display: flex;
     align-items: center; 
@@ -113,6 +113,7 @@
     flex-direction: column;
     padding: 15px;
     overflow: hidden;
+    min-height: 0;
 }
 
 #terminal_output{
@@ -120,6 +121,8 @@
     overflow-y: auto;
     line-height: 1.6;
     scrollbar-width: thin;
+    color: #00FF00;
+    min-height: 0;
 }
 
 #terminal_form{
@@ -132,6 +135,7 @@
 .prompt{
     margin-right: 10px;
     font-weight: 900;
+    color: #00FF00;
     
 }
 
