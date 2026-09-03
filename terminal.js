@@ -87,6 +87,7 @@ function handleCommand(command){
             break
         case "version":
             print("NightTerminal: v1.0.0")
+            break
         case "clear":
              output.innerHTML = ""
              break
