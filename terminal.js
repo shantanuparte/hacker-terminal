@@ -1,4 +1,3 @@
-const { jsx } = require("react/jsx-runtime")
 
 console.log("Working ")
 
@@ -79,8 +78,15 @@ function handleCommand(command){
             print("  date      -Show current date")
             print("   time      -Show current time")
             print("  whoami     -Show User name")
+            print("  version    -Version of Night terminal")
+            print("  rand       -random number")
             break
-
+        case "rand":
+            const random_number = Math.floor(Math.random * 100) + 1
+            print(`Random Number ${random_number}`)
+            break
+        case "version":
+            print("NightTerminal: v1.0.0")
         case "clear":
              output.innerHTML = ""
              break
